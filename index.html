@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html translate="no" xmlns="http://www.w3.org/1999/xhtml" class="notranslate" data-school-bg="">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Home</title>
+    <meta name="description" content="Learning Management System - We help Classrooms, Schools and Districts re tool to inspire their students with Personalized Learning protocols designed to unleash hidden talent" />
+    <meta name="keywords" content="lms, learning, education, learning management system, schools, university, elearning, classroom, academy, teaching, Best LMS, training, platform" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" />
+    <link rel="stylesheet" href="https://v15-cdn.classera.com/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://v15-cdn.classera.com/css/main-style.css" />
+    <script src="https://v15-cdn.classera.com/js/jQuery/jquery-2.2.4.min.js"></script>
+    <script>
+        var user_id = '58900437';
+        var school_id = '561';
+        var role_id = '4';
+        var current_api = 'https://api.classera.com/';
+        var current_access_token = '92d3da1fd852728774f9813b7eab8d8bce0856e1';
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    <img src="https://v15-cdn.classera.com/img/classera_premium_logo_white.png" alt="Classera" />
+                </a>
+            </div>
+            <div class="navbar-account">
+                <div class="dateTime" id="dateTime">
+                    <div class="gdate-wrapper"><i class="icon-calendar"></i><span class="gdate">21/02/2025</span></div>
+                    <div class="clock-wrapper"><i class="icon-clock"></i><span class="clock" dir="ltr"></span></div>
+                </div>
+                <ul class="account-area">
+                    <li><a href="/teacher/messages/inbox"><i class="icon-mail"></i><span id="messages_count"></span></a></li>
+                    <li><a href="/teacher/notifications"><i class="icon-bell"></i><span id="notification_count"></span></a></li>
+                    <li>
+                        <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                            <div class="avatar">
+                                <img src="https://v15-cdn.classera.com/img/thumb.png" alt="profile" />
+                            </div>
+                            <i class="icon-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/teacher/users/edit_profile">Edit Profile</a></li>
+                            <li><a href="/users/logout">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container container-fluid">
+        <div class="page-container">
+            <div class="page-sidebar" id="sidebar">
+                <div class="sidebar-header-wrapper">
+                    <a href="/"><img src="https://v15-cdn.classera.com/img/school_g_112.png" alt="School Logo" /></a>
+                </div>
+                <div class="school_name"><h4>Orbit International School - Boys</h4></div>
+                <ul class="nav sidebar-menu">
+                    <li><a href="/teacher"><i class="icon-home"></i><span>Home</span></a></li>
+                    <li><a href="/teacher/courses"><i class="icon-book"></i><span>Courses</span></a></li>
+                    <li><a href="/teacher/messages"><i class="icon-mail"></i><span>Mailbox</span></a></li>
+                    <li><a href="/teacher/events"><i class="icon-calendar"></i><span>Calendar</span></a></li>
+                </ul>
+            </div>
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>Home</h1>
+                </div>
+                <div class="page-body">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 col-xs-12">
+                            <div class="notification_center_box">
+                                <div class="datetime-wrapper">
+                                    <div id="dateTime">
+                                        <div class="gdate-wrapper"><i class="icon-calendar"></i><span class="gdate">21/02/2025</span></div>
+                                        <div class="clock-wrapper"><i class="icon-clock"></i><span class="clock" dir="ltr"></span></div>
+                                    </div>
+                                    <div class="wlc-section">
+                                        <h5>Welcome</h5>
+                                        <h1>Ahmed Khamis Ahmed</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-xs-12">
+                            <div class="notification_center_box">
+                                <div class="flex items-center">
+                                    <i class="icon-notifications"></i>
+                                    <p class="notification_center_label">Notifications Center</p>
+                                </div>
+                                <div class="items_wrapper_of_notification_center_box">
+                                    <div class="notifications_box">
+                                        <div class="notifications_item">
+                                            <i class="icon-ion-megaphone"></i>
+                                            <h1 class="announcement_count">0</h1>
+                                        </div>
+                                    </div>
+                                    <div class="notifications_box">
+                                        <div class="notifications_item">
+                                            <i class="icon-material-email"></i>
+                                            <h1 class="messages_count_in_notification_center">0</h1>
+                                        </div>
+                                    </div>
+                                    <div class="notifications_box">
+                                        <div class="notifications_item">
+                                            <i class="icon-material-notifications"></i>
+                                            <h1 class="notification_count_in_notifiaction_center">0</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-courses-index">
+                        <div class="main-category-stu-box">
+                            <div class="main-category-stu-box-container">
+                                <div class="main_category_stu_cover">
+                                    <span class="main_category_stu_count">8</span>
+                                    <div class="main_category_stu_cover_icon">
+                                        <img src="https://v15-cdn.classera.com/img/icons110/new/course_default.png" alt="Course Icon" />
+                                    </div>
+                                    <div class="main_category_stu_title">English</div>
+                                    <span class="main_category_level_title">Fifth</span>
+                                    <span class="msg">You have 8 new submissions to mark</span>
+                                </div>
+                                <div class="main_category_stu_inner">
+                                    <div class="paged_block">
+                                        <div class="paged_items">
+                                            <div class="paged_item">
+                                                <div class="link">
+                                                    <a href="/teacher/courses/browse_content/cid:yZ9vWLQJAJpr7ik4nr4RkwC1E9">Manage Content</a>
+                                                </div>
+                                            </div>
+                                            <div class="paged_item">
+                                                <div class="link">
+                                                    <a href="/teacher/absences/daily_attendance/cid:yZ9vWLQJAJpr7ik4nr4RkwC1E9">Lecture Management</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+</body>
+</html>
